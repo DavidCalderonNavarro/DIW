@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 2 Mapa de imágenes Circulos</h1>
+
+    <img src="./img/ejercicio2.png" usemap="#m1" style="max-width: 100%; height: auto;">
+
+    <map name="m1">
+        <area alt="Rojo" title="Rojo" shape="circle" coords="115,85,22" href="#Rojo">
+        <area alt="Azul" title="Azul" shape="circle" coords="188,84,22" href="#Azul">
+        <area alt="Verde" title="Verde" shape="circle" coords="257,86,22" href="#Verde">
+        <area alt="Amarillo" title="Amarillo" shape="circle" coords="325,85,22" href="#Amarillo">
+    </map>
+
+    <br><br>
+
+
+    <h2 id="Rojo">Rojo</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Azul">Azul</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Verde">Verde</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Amarillo">Amarillo</h2>
+
+    <script>
+        $(document).ready(function () {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+</body>
+
+</html>

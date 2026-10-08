@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios del 1 al 7</title>
+</head>
+
+<body>
+
+    <h1>David Calderón Navarro</h1>
+
+    <ul type="disk">
+        <li>Almería</li>
+        <li>Asturias</li>
+        <li>Ávila</li>
+        <li>Badajoz</li>
+        <li>Barcelona</li>
+    </ul>
+    <ul type="square">
+        <li>Castellón</li>
+        <li>Ciudad Real</li>
+        <li>Córdoba</li>
+        <li>La Coruña</li>
+        <li>Cuenca</li>
+        <li>Gerona</li>
+    </ul>
+    <ul type="circle">
+        <li>Burgos</li>
+        <li>Cáceres</li>
+        <li>Cádiz</li>
+        <li>Cantabria</li>
+    </ul>
+    <ul>
+        <li type="circle">Torremolinos</li>
+        <li type="square">Churriana</li>
+        <li type="disk">Guadalmar</li>
+        <li type="square">Granada</li>
+        <li type="circle">Torrox</li>
+    </ul>
+
+    <ol type="a" start="8">
+        <li>Madrid</li>
+        <li>Málaga</li>
+        <li>Murcia</li>
+        <li>Navarra</li>
+    </ol>
+    <ol type="1" start="3">
+        <li>Las Palmas</li>
+        <li>Pontevedra</li>
+        <li>La Rioja</li>
+        <li>Salamanca</li>
+    </ol>
+    <ol type="i" start="1102">
+        <li>Segovia</li>
+        <li>Sevilla</li>
+        <li>Soria</li>
+        <li>Tarragona</li>
+        <li>Santa Cruz</li>
+        <li>Teruel</li>
+    </ol>
+
+    <ul type="circle">
+        <li>Álava</li>
+        <ul type="circle">
+            <li>Vitoria</li>
+        </ul>
+    </ul>
+    <ul type="circle">
+        <li>Asturias</li>
+        <ul type="circle">
+            <li>Oviedo</li>
+        </ul>
+    </ul>
+    <ul type="circle">
+        <li>Guipúzcoa</li>
+        <ul type="circle">
+            <li>San Sebastián</li>
+        </ul>
+    </ul>
+    <ul type="circle">
+        <li>Islas Baleares</li>
+        <ul type="circle">
+            <li>Palma de Mallorca</li>
+        </ul>
+    </ul>
+    <ul type="circle">
+        <li>Navarra</li>
+        <ul type="circle">
+            <li>Pamplona</li>
+        </ul>
+    </ul>
+    <ul type="circle">
+        <li>Las Palmas</li>
+        <ul type="circle">
+            <li>Las Palmas de Gran Canaria</li>
+        </ul>
+    </ul>
+    <ul type="circle">
+        <li>La Rioja</li>
+        <ul type="circle">
+            <li>Logroño</li>
+        </ul>
+    </ul>
+
+    <ul type="circle">
+        <li>Málaga</li>
+        <ol type="a" start="4">
+            <li>Estepona</li>
+            <li>San Pedro de Alcantar</li>
+            <li>Marbella</li>
+            <li>Alahurín de la Torre</li>
+            <li>Alahurín el Grande</li>
+        </ol>
+    </ul>
+    <ul type="circle">
+        <li>Sevilla</li>
+        <ol type="i">
+            <li>Ecija</li>
+            <li>Dos Hermanas</li>
+            <li>San juan de aznalfarache </li>
+        </ol>
+    </ul>
+    <ul type="circle">
+        <li>Córdoba</li>
+        <ol type="i" start="9">
+            <li>Lucena</li>
+            <li>PozoBlanco</li>
+            <li>Rute</li>
+        </ol>
+    </ul>
+    <ul type="circle">
+        <li>Granada</li>
+        <ul type="square">
+            <li>Arbolote</li>
+            <li>Almuñecar</li>
+        </ul>
+    </ul>
+
+    <details>
+        <summary>
+            Haz clic en la imagen 1 para ver la descripción<br>
+            <img src="img/elbicho.jpg">
+        </summary>
+        <p>CR7 sosteniendo un Balón de Oro.</p>
+    </details>
+
+    <details>
+        <summary>
+            Haz clic en la imagen 2 para ver la descripción<br>
+            <img src="img/mariposa.png">
+        </summary>
+        <p>Cuchillo mariposa de CS2.</p>
+    </details>
+
+    <button id="abrir">Abrir diálogo</button>
+    <dialog id="miDialogo">
+        <h2>Preguntas Modales</h2>
+        <details>
+            <summary>
+                ¿Para que se usa show()?
+            </summary>
+            <p>Muestra como ventana flotante</p>
+        </details>
+        <details>
+            <summary>
+                ¿Para que se usa showModal()?
+            </summary>
+            <p>Muestra como ventana flotante pero bloquea la interaccion con el resto de la página</p>
+        </details>
+        <button id="cerrar">Cerrar</button>
+    </dialog>
+    <script>
+        const dialogo = document.getElementById("miDialogo");
+        document.getElementById("abrir").addEventListener("click", () => dialogo.showModal());
+        document.getElementById("cerrar").addEventListener("click", () => dialogo.close());
+    </script>
+
+</body>
+
+</html>
