@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    <style>
+        td {
+
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Ejercicio 1</h1>
+    <h3>Crea varias paginas formateadas mediante una tabla con el esquema Cabecera – Barra
+        Vertical – Centro – Pie con un mapa de Google en el centro</h3>
+
+    <table border="2px" style="width: 30%">
+
+        <thead>
+
+            <tr>
+
+                <td colspan="2">CABECERA</td>
+
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+
+                <td>BARRA VERTICAL<br>
+
+                    <a href="">Pagina1</a><br>
+                    <a href="">Pagina2</a>
+
+                </td>
+                <td>
+
+                    CENTRO<br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51233.53980095955!2d-4.5450829049994725!3d36.62407005802367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fb8d8b65dbab%3A0x2cd48be8aebfb948!2s29620%20Torremolinos%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1793027282304!5m2!1ses!2ses"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+
+
+                </td>
+
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    PIE DE PÁGINA
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h1>Ejercicio 2</h1>
+    <h3>Cread un mapa de Sevilla e insertad lo en tu web.</h3>
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1d9bGC2uuE4dbwrY0z8llH5yUr8x2KNw&ehbc=2E312F" width="640" height="480"></iframe>
+
+    <h1>Ejercicio 3</h1>
+    <h3>Crea una panorámica del instituto e insertarla en tu web con un iframe</h3>
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1tkJE-WgVOX3-mRSvF44Gdx69oxcVyhI&ehbc=2E312F" width="640" height="480"></iframe>
+
+    <h1>Ejercicio 4</h1>
+    <h3>Crea dos panorámicas con google street view de la ciudad que mas te guste e insertala en
+        tu web con un iframe</h3>
+
+    <h4>Tokyo</h4>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1793028642969!6m8!1m7!1s26pWvSi6X0XNsPWzpFNM5g!2m2!1d35.71401403157799!2d139.7971091262444!3f254.50454062101235!4f8.33756545473993!5f0.7820865974627469"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    <h4>Sevilla</h4>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!4v1793029256328!6m8!1m7!1sEw9DijWPPo7EHv17o0A6cA!2m2!1d37.37700117026157!2d-5.987129181893497!3f62.02191356918422!4f-3.7598669700432055!5f0.7820865974627469"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    <h1>Ejercicio 5</h1>
+    <h3>Crea un mapa de Torremolinos usando una url generada apartir de los valores x e y y
+        explicalo en el html.</h3>
+
+    <iframe src="https://maps.google.com/maps?q=36.6203,-4.4998&z=14&output=embed" title="Mapa de Torremolinos">
+    </iframe>
+
+    <h1>Ejercicio 6</h1>
+    <h3>Crea un mapa de Londres apuntando al puente del Londres con un cartel que especifique
+        “puente de Londres” y otros atractivos turísticos</h3>
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1wgrGZZ-8SSgaMeBnn-eelp9pQxPyrMc&ehbc=2E312F" width="640" height="480"></iframe>
+
+    <h1>Ejercicio 7</h1>
+    <h3>Crea un mapa de roma apuntando al coliseo y otro con un cartel que especifique “puente
+        del Vaticano” e inserta la en tu web con un iframe</h3>
+
+    <h2 id="coliseo">1. Mapa del Coliseo de Roma</h2>
+
+    <iframe src="https://maps.google.com/maps?q=Coliseo%20de%20Roma&z=17&output=embed" title="Mapa del Coliseo de Roma"
+        loading="lazy" allowfullscreen>
+    </iframe>
+
+    <h2>2. Mapa del Puente del Vaticano</h2>
+
+    <iframe src="https://maps.google.com/maps?q=Ponte%20Sant%27Angelo%2C%20Roma&z=16&output=embed"
+        title="Puente del Vaticano - Puente Sant'Angelo" loading="lazy" allowfullscreen>
+    </iframe>
+
+    <h1>Ejercicio 8</h1>
+    <h3>Crea un mapa de ucrania con flechas al Donetsk y Lugansk, e Jersón y Zaporiya</h3>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1xeM_c3tMjQJatbBVl3WXNISY-VjR1Sg&ehbc=2E312F" width="640"
+            height="480"></iframe>
+    </div>
+
+</body>
+
+</html>

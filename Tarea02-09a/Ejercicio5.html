@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario GET</title>
+    </head>
+
+    <body>
+
+        <form action="" method="get">
+
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+" required autofocus>
+            <br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñ ]+" required>
+            <br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad" pattern="[0-9]+" required>
+            <br><br>
+
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" id="Contraseña" name="Contraseña" size="5">
+            <br><br>
+
+            <input type="hidden" name="oculto" value="edad">
+
+            <!-- Botón de envío -->
+            <input type="submit" value="Enviar">
+
+            <!-- Botón para borrar el formulario -->
+            <input type="reset" value="Borrar">
+
+            <!-- Botón normal -->
+            <input type="button" value="Pulsar">
+
+            <!-- Botón de imagen -->
+            <input type="image" src="./img/enviar.jpg" alt="Enviar formulario" width="50">
+
+        </form>
+
+    </body>
+
+    </html>
+
+
+</body>
+
+</html>

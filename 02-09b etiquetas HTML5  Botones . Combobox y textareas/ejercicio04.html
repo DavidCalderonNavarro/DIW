@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 4</h1>
+    <h3>Crea un cuadro combinado como los de la imagen</h3>
+
+    <table border="1px" style="border-color: blue;">
+
+        <tr>
+
+            <td>
+
+                <form action=”servicio.php” method=”get”>
+                    <label for=”provincia” id=”provincia”><strong>Seleccione su Pueblo Blanco de Málaga o
+                            Cádiz</strong></label><br>
+                    <select name=”provincia”>
+                        <optgroup label="Málaga">
+                            <option value="benao">Benaoján</option>
+                            <option value="mo">Montejaque</option>
+                            <option value="at">Atajate</option>
+                            <option value="ji">Jimera de Libar</option>
+                            <option value="benada">Benadalid</option>
+                            <option value="al">Algotocín</option>
+                            <option value="ga">Gaucín</option>
+                            <option value="za">Zamora</option>
+                        </optgroup>
+                        <optgroup label="Cádiz">
+                            <option value="ar">Arcos de la frontera</option>
+                            <option value="ba">Barros</option>
+                            <option value="algo">Algodonales</option>
+                            <option value="vi">Villamartin</option>
+                            <option value="ol">Olvera</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="enviar">
+                </form>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

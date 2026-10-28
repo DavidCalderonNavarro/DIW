@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 5</h1>
+    <h3>Crea un Cuadro de texto multilínea con estas características : El cuadro debe
+        adquirir el foco en cuanto carga la página. Con un tamaño maximo de 50 caracteres y anchura 10
+        columnas y 5 filas Debe tener de placeholder la cadena "Escribe tus impresiones" y debe ser
+        obligatorios</h3>
+
+    <form action="servicio.php" method="get">
+        Escribe un texto descriptivo:<br>
+
+        <textarea name="texto" rows="5" cols="10" maxlength="50" placeholder="Escribe tus impresiones" required
+            autofocus></textarea>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
