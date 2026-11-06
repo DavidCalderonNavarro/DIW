@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 1 Mapa de imágenes Cuadrados</h1>
+
+    <img src="./img/ejercicio1.png" usemap="#m1" style="max-width: 100%; height: auto;">
+
+    <map name="m1">
+        <area alt="HardWare" title="HardWare" shape="rect" coords="17,25,210,67" href="#HardWare">
+        <area alt="Comments" title="Comments" shape="rect" coords="253,220,447,280" href="#Comments">
+        <area alt="Texts" title="Texts only" shape="rect" coords="16,218,212,281" href="#Texts">
+        <area alt="Super" title="Super mini" shape="rect" coords="257,29,445,70" href="#Super">
+    </map>
+
+    <br><br>
+
+
+    <h2 id="HardWare">HardWare</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Comments">Comments</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Texts">Texts only</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Super">Super mini</h2>
+
+    <script>
+        $(document).ready(function () {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 3 - Datalist y progress</title>
+</head>
+
+<body>
+  <form action="recogida.php" method="get"
+  style="width: 400px; margin-left:auto; margin-right:auto; background-color: beige; border-color:brown; border: 1px solid red; border-radius:6px;">
+    <h1>Formulario 3</h1>
+    <fieldset>
+      <legend>Genera tu personaje para el juego</legend>
+      <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre"><br>
+      <label for="faccion">Valoración:</label>
+      <input type="text" id="faccion" name="faccion" list="listaFacciones" placeholder="Pulsa para facciones">
+      <datalist id="listaFacciones">
+        <option value="Guerrero">
+        <option value="Mago">
+        <option value="Ladrón">
+        <option value="Paladín">
+      </datalist>
+      <p><label for="edadp" style="min-width:0">Escoge la edad</label><br>
+        <input type="range" id="edadp" name="edadp" min="1" max="100" value="40">
+      </p>
+      <button type="button" onclick="cambio()">Genera tu personaje</button>
+    </fieldset>
+
+    <fieldset class="stat">
+      <legend>Datos del personaje</legend>
+      <label for="Fuerza">Fuerza</label><progress id="Fuerza" max="200" value="30"></progress><br>
+      <label for="Velocidad">Velocidad</label><progress id="Velocidad" max="200" value="60"></progress><br>
+      <label for="Persuasion">Persuasión</label><progress id="Persuasion" max="200" value="140"></progress><br>
+      <label for="Espionaje">Espionaje</label><progress id="Espionaje" max="200" value="30"></progress>
+    </fieldset>
+  </form>
+
+  <script>
+    function cambio() {
+      document.getElementById("Velocidad").value = Math.random() * 200;
+      document.getElementById("Fuerza").value = Math.random() * 200;
+      document.getElementById("Persuasion").value = Math.random() * 200;
+      document.getElementById("Espionaje").value = Math.random() * 200;
+    }
+  </script>
+</body>
+
+</html>

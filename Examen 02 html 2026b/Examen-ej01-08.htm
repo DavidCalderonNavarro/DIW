@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        td{
+
+            width: 10%;
+            height: 20px;
+
+        }
+        .hola{
+
+            width: 200px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1> Diseño de Interfaces Web </h1>
+    <h1> Examen html </h1>
+    <h1>Nombre : </h1>
+
+    <img src="imgs/valoracion.jpg">
+
+
+    <h2> Ejercicio 1 Metas</h2>
+    <br>
+    <h2> Ejercicio 2 formatos</h2>
+    <br>
+    <h2> Ejercicio 3 Listas</h2>
+
+    <ol>
+
+        <li>JavaScriptFM</li>
+        <ol type="i" start="5">
+
+            <li>Angular</li>
+            <li>ReactJS</li>
+            <ul>
+
+                <li>NextJS</li>
+
+            </ul>
+            <li>VueJS</li>
+            <li>EmberJS</li>
+            <li>ExpressJS</li>
+        </ol>
+        <li>Servidores</li>
+        <ol type="a">
+
+            <li>NodeJS</li>
+            <li>Ngix</li>
+            <li>Apache</li>
+            <ul>
+
+                <li>Modrewriter</li>
+
+            </ul>
+        </ol>
+        <li>Servidor</li>
+        <ol type="I" start="2">
+
+            <li>php</li>
+            <ul type="circle">
+
+                <li>Laravel</li>
+                <li>Symphony</li>
+
+            </ul>
+            <li>python</li>
+            <ul type="circle">
+
+                <li>Django</li>
+
+            </ul>
+
+        </ol>
+
+        <li>Servidor</li>
+
+        <ol type="A">
+
+            <li>JSON</li>
+            <li>XML</li>
+
+        </ol>
+
+    </ol>
+
+    <br>
+    <h2> Ejercicio 4 Enlaces</h2>
+    <br>
+
+    <a href="#inicio">Inicio</a><br>
+    <a href="#mitad">Final</a><br>
+    <a href="mailto:tecnica@iesplayamar.es?subject=examen">webmaster</a>
+    <a href="https://www.google.com" target="_blank" rel="nofollow">Google</a><br>
+
+    <h2> Ejercicio 5 Imagenes</h2>
+    <br>
+    <h2> Ejercicio 6 Mapa de imagenes </h2>
+    <br>
+
+    <img src="./imgs/mapa.jpg" usemap="#m1" style="max-width: 100%; height: auto;">
+
+    <map name="m1">
+
+        <area alt="Rohan" title="Rohan" shape="circle" coords="164,200,125" href="#WikiRohan">
+        <area alt="Lorien" title="Lorien" shape="rect" coords="191,320,324,426" href="#WikiLorien">
+        <area alt="Fangorn" title="Fangorn" shape="circle" coords="67,391,38" href="#WikiFangorn">
+        <area alt="Mordor" title="Mordor" shape="circle" coords="309,468,30" href="#Mordor">
+        <area alt="Gondor" title="Gondor" shape="poly"
+            coords="158,473,230,511,146,609,81,709,31,641,83,584,50,538,130,516" href="#WikiGondor">
+
+    </map>
+
+    <br>
+    <h2> Ejercicio 7 Incrusta el pdf </h2>
+    <br>
+
+    <h2>1. Con iframe</h2>
+    <iframe src="./pdfs/doc1.pdf" width="800" height="600">
+    </iframe>
+
+    <h2>2. Con embed</h2>
+    <embed src="./pdfs/doc2.pdf" type="application/pdf" width="800" height="600">
+
+    <h2>3. Con object</h2>
+    <object data="./pdfs/doc3.pdf" type="application/pdf" width="800" height="600">
+        <p>
+            Tu navegador no puede mostrar el PDF.
+            <a href="./pdfs/doc3.pdf">Descargar PDF</a>
+        </p>
+    </object>
+    <br>
+    <a href="./pdfs/doc1.pdf" target="visor">doc1</a>
+    <a href="./pdfs/doc2.pdf" target="visor">doc2</a>
+    <a href="./pdfs/doc3.pdf" target="visor">doc3</a>
+
+    <br><br>
+
+    <iframe name="visor" width="800" height="600" src="pdf1.pdf">
+    </iframe>
+
+    <br>
+    <h2> Ejercicio 8 Tablas </h2>
+    <br>
+
+    <ol>
+
+        <li>span</li>
+        <table border="1px" style="text-align: center;">
+
+            <colgroup>
+                <col style="width: 100px;">
+                <col style="width: 200px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+            </colgroup>
+
+            <tr>
+
+                <td>100px</td>
+                <td>200px</td>
+                <td>100px</td>
+                <td>100px</td>
+
+            </tr>
+            <tr style="background-color: yellow;">
+
+                <td></td>
+                <td rowspan="2"></td>
+                <td colspan="2"></td>
+
+            </tr>
+            <tr>
+
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr style="background-color: orangered">
+
+                <td colspan="2"></td>
+                <td></td>
+
+            </tr>
+
+
+        </table>
+
+        <li>anidadas</li>
+
+        <table border="1px">
+
+            <thead style="text-align: center;">
+
+                <tr>
+
+                    <td>Esto es una Cabecera</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <p>Esto es un footer</p>
+                    </td>
+                    <td></td>
+
+                </tr>
+                <tr>
+
+                    <td></td>
+                    <td>
+
+                        <table border="1px" style="text-align: center;">
+
+
+                            <tr>
+
+                                <td style="height: 20px;"></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <table border="1px">
+
+                                        <tr>
+
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+
+                                    </table>
+
+                                </td>
+                                <td></td>
+
+                            </tr>
+
+
+                        </table>
+
+                    </td>
+
+                </tr>
+
+            </thead>
+
+        </table>
+
+    </ol>
+
+
+</body>
+
+</html>

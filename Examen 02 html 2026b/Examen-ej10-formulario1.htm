@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Examen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            border: 2px solid #0000ff;
+            background-color: #e0f7fa;
+            padding: 20px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Impact', sans-serif;
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        fieldset {
+            border: 1px solid #7f7f7f;
+            border-radius: 0px;
+            padding: 12px;
+            margin-bottom: 5px;
+            background-color: transparent;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #0000ff;
+            font-size: 16px;
+            padding: 0 5px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 4px 6px;
+            border: 1px solid #767676;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 70px;
+            resize: vertical;
+        }
+
+        .range-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Estilos de barras de progreso y meters */
+        progress,
+        meter {
+            width: 100%;
+            height: 12px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .actions {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn-submit {
+            background-color: #000000;
+            color: #ccff00;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 30px;
+            border-radius: 20px;
+            border: 2px solid #7f7f7f;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+
+        .img1 {}
+    </style>
+</head>
+
+<body>
+
+    <h1> Diseño de Interfaces Web </h1>
+    <h1> Ejercicio 9 formulario </h1>
+    <br>
+    <div class="container">
+        <img src="imgs/form.jpg" class="form-group">
+    </div>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <div class="container">
+
+
+        <br>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h1> Formulario de Examen </h1>
+            <div class="grid">
+
+                <!-- Sección Usuario -->
+                <fieldset>
+
+                    <legend>Usuario</legend>
+                    <div class="form-group">
+
+                        <label for="alias">Alias:</label><br>
+                        <input type="text" id="alias" name="alias" maxlength="30"
+                            placeholder="tamaño máximo alias 30 caracteres">
+
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="apellidos">Apellidos:</label><br>
+                        <input type="text" id="apellidos" name="apellidos">
+
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre">
+
+                    </div>
+                </fieldset>
+
+                <!-- Sección Datos de Contacto -->
+                <fieldset>
+
+                    <legend>Datos de Contacto</legend>
+
+                    <div class="form-group">
+
+                        <label for="telf">Telefono:</label><br>
+                        <input type="numnber" id="telf" name="telf">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="telf">Email:</label><br>
+                        <input type="email" id="email" name="email" maxlength="9">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="fecha">Fecha de nacimiento: </label>
+                        <input type="date" id="fecha" name="fecha">
+
+                    </div>
+                </fieldset>
+
+                <!-- Sección Solicitud Cita -->
+                <fieldset>
+
+                    <legend>Solicitud cita</legend>
+
+                    <div class="form-group">
+
+                        <label for="hora">Hora cita</label>
+                        <input type="time" id="hora" name="hora">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="forma">Formalidad Deseada del Asistente</label>
+                        <input type="range" id="forma" name="forma">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="sedes"><strong>Sedes Disponibles</strong></label><br><br>
+                        <select id="sedes" name="sedes">
+
+                            <option>Pulsa para ver contenido</option>
+                            <option>Málaga</option>
+                            <option>Churriana</option>
+                            <option>Torremolinos</option>
+                        </select>
+
+                    </div>
+                </fieldset>
+
+                <!-- Sección Información Adicional -->
+                <fieldset>
+
+                    <legend>Información Adicional</legend>
+
+                    <label for="contenido">Que te parecio el contenido
+
+                        <textarea name="texto" rows="5" cols="10" maxlength="50" placeholder="Escribe tus impresiones"
+                            required autofocus></textarea>
+
+                        <label for="valor"><strong>Valoración</strong></label><br>
+                        <input type="text" id="valor" placeholder="Escoge un valor">
+
+                </fieldset>
+
+                <!-- Sección Progresos -->
+                <fieldset class="full-width">
+
+                    <legend>Progresos</legend>
+
+                    <label><strong>Progresos del formulario</strong></label><br>
+                    <progress value="60" max="100"></progress>
+
+                </fieldset>
+
+                <!-- NUEVA Sección: Subida de múltiples archivos -->
+                <fieldset class="full-width">
+                    <div class="form-group">
+
+                        <label for="archivo">Selecciona uno o más archivos:</label><br>
+                        <input type="file" id="archivo" name="archivo">
+
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <!-- Botón Enviar -->
+            <div class="actions">
+
+                <button type="submit">Enviar</button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

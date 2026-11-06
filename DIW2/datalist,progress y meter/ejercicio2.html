@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 2 - Datalist y textarea</title>
+</head>
+
+<body>
+  <form action="recogida.php" method="get"
+    style="width: 400px; margin-left:auto; margin-right:auto; background-color: beige; border-color:brown; border: 1px solid red; border-radius:6px;">
+    <h1>Formulario 3</h1>
+    <fieldset>
+      <legend>Datos personales</legend>
+      <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre"><br>
+      <label for="apellido">Apellido:</label><input type="text" id="apellido" name="apellido"><br>
+      <label for="edad">Edad:</label><input type="number" id="edad" name="edad">
+    </fieldset>
+
+    <fieldset>
+      <legend>Concierto</legend>
+      <label for="concierto">Concierto al que asististe :</label>
+      <input type="text" id="concierto" name="concierto" list="listaConciertos" placeholder="Pulsa para ver conciertos">
+      <datalist id="listaConciertos">
+        <option value="Malu">
+        <option value="Omar Montes">
+        <option value="Los Mojinos">
+        <option value="Medina Azahara">
+        <option value="Julio Iglesias">
+      </datalist>
+      <br>
+      <label for="impresiones">Que te parecio el concierto</label>
+      <textarea id="impresiones" name="impresiones" rows="10" cols="40"
+        placeholder="Escribe tus impresiones"></textarea>
+      <br>
+      <label for="valoracion" style="min-width:0"><b>Valoración:</b></label>
+      <input type="text" id="valoracion" name="valoracion" list="listaValoracion" placeholder="Pulsa para ver opciones">
+      <datalist id="listaValoracion">
+        <option value="Muy malo">
+        <option value="Malo">
+        <option value="Regular">
+        <option value="Bueno">
+        <option value="Excelente">
+      </datalist>
+    </fieldset>
+    <input type="submit" value="Gracias por tus Opiniones">
+  </form>
+</body>
+
+</html>

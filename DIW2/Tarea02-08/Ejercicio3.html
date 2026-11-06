@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 3 Mapa de imágenes Poly</h1>
+
+    <img src="./img/ejercicio3.png" usemap="#m1" style="max-width: 100%; height: auto;">
+
+    <map name="m1">
+        <area alt="1" title="Ronda" shape="poly" coords="23,241,123,131,191,173,78,276" href="#Ronda">
+        <area alt="2" title="Costa Occidental" shape="poly" coords="78,276,163,213,295,215,106,309" href="#Costa">
+        <area alt="3" title="Valle del Guadalorce" shape="poly" coords="165,209,235,131,272,191,253,223" href="#Valle">
+        <area alt="4" title="Malaga" shape="poly" coords="257,221,274,194,262,139,321,134,334,190" href="#Malaga">
+        <area alt="5" title="Antequera" shape="poly" coords="148,133,321,135,347,106,324,27,142,99" href="#Antequera">
+        <area alt="6" title="La Axarquía" shape="poly" coords="350,100,321,137,342,159,330,193,463,185,453,155"
+            href="#Axarquia">
+    </map>
+
+    <br><br>
+
+
+    <h2 id="Ronda">Ronda</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Costa">Costa Occidental</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Valle">Valle del Guadalorce</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Malaga">Málaga</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Antequera">Antequera</h2>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <h2 id="Axarquia">La Axarquía</h2>
+
+    <script>
+        $(document).ready(function () {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+
+</body>
+
+</html>
