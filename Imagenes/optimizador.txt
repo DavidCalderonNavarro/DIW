@@ -1,0 +1,16 @@
+
+@echo off
+mkdir webp
+mkdir avif
+
+for %%f in (*.png) do (
+    magick "%%f" -quality 80 "webp/%%~nf.webp"
+)
+
+for %%f in (*.jpg) do (
+    magick "%%f" -quality 80 "webp/%%~nf.webp"
+    magick "%%f" -quality 65 "avif/%%~nf.avif"
+)
+
+echo Conversiones completadas
+pause
