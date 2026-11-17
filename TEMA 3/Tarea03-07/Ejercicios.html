@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 1</h1>
+
+    <h1>Primer svg</h1>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="205" height="205" viewBox="-205 -205 405 405"
+        style="background-color: lightgray">
+        <circle cx="0" cy="0" r="100" fill="none" stroke="red" stroke-width="1" />
+        <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+        <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+    </svg>
+
+    <h1>2º SVG</h1>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105"
+        style="background-color: lightgray">
+        <circle cx="0" cy="0" r="100" fill="none" stroke="red" stroke-width="1" />
+        <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+        <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+    </svg>
+
+    <h1>3º SVG</h1>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="-100 -100 200 200"
+        style="background-color: lightgray">
+        <circle cx="0" cy="0" r="100" fill="none" stroke="red" stroke-width="1" />
+        <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+        <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+    </svg>
+
+    <h1>4º SVG</h1>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="-95 -95 190 190"
+        style="background-color: lightgray">
+        <circle cx="-50" cy="0" r="40" fill="none" stroke="blue" stroke-width="2" />
+        <circle cx="50" cy="0" r="40" fill="none" stroke="blue" stroke-width="2" />
+        <circle cx="0" cy="-50" r="40" fill="none" stroke="green" stroke-width="2" />
+        <circle cx="0" cy="50" r="40" fill="none" stroke="green" stroke-width="2" />
+        <circle cx="0" cy="0" r="40" fill="none" stroke="red" stroke-width="2" />
+    </svg>
+
+    <h1>5º SVG</h1>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="220" height="170" viewBox="-10 -10 220 170">
+        <circle cx="75" cy="75" r="75" fill="red" />
+        <circle cx="100" cy="75" r="75" fill="none" stroke="yellow" />
+        <circle cx="125" cy="75" r="75" fill="mediumseagreen" />
+    </svg>
+
+    <h1>6º SVG</h1>
+
+    <img src="svg.svg">
+
+
+
+    <h1>Ejercicio 2</h1>
+
+    <p>Crea un svg que aparezca un circulo de tamaño 300 dentro de otro tamaño 200.
+        Con un width 300x300 y un viewport de 250x250</p>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="-125 -125 250 250">
+        <circle cx="0" cy="0" r="150" fill="red" />
+        <circle cx="0" cy="0" r="100" fill="mediumseagreen" />
+    </svg>
+
+    <h2>Prueba desde archivo externo svg:</h2>
+
+    <img src="Ejercicio2a.svg">
+
+    <h1>Ejercicio 3</h1>
+    <p>Crea un svg que aparezcan cinco circulos de colores degradados de rojo
+        (fill:#550000, fill:880000, fill:AA0000, fill:CC0000,fill:FF0000) cuyo rx se vaya desplazando 25 y
+        su radio vaya creciendo de 5 en 5.</p>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="-50 -100 200 200"
+        style="background-color: aqua;">
+        <circle cx="5" cy="0" r="10" fill="#550000" />
+        <circle cx="25" cy="0" r="15" fill="#880000" />
+        <circle cx="50" cy="0" r="20" fill="#AA0000" />
+        <circle cx="75" cy="0" r="25" fill="#CC0000" />
+        <circle cx="100" cy="0" r="30" fill="#FF0000" />
+    </svg>
+
+    <h1>Ejercicio 4</h1>
+
+    <p>Ejercicio 4. Modifica el anterior para que el degradado sea en
+        verdes y se incremente sobre el eje cy y se se vaya desplazando de
+        25 en 25m de manera que el más oscuro salga encima de la pila y
+        su radio vaya creciendo de 5 en 5</p>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="200" viewBox="-100 -50 200 200"
+        style="background-color: aqua;">
+        <circle cy="5" cx="0" r="10" fill="#004d25" />
+        <circle cy="25" cx="0" r="15" fill="#228b22" />
+        <circle cy="50" cx="0" r="20" fill="#2e8b57" />
+        <circle cy="75" cx="0" r="25" fill="#90ee90" />
+        <circle cy="100" cx="0" r="30" fill="#b7e4c7" />
+    </svg>
+
+    <h1>Ejercicio 5</h1>
+
+    <p>Modifica el anterior para que el degradado sea en
+        amarillos,cyan y purpura y se incremente sobre el eje cy y el cx de
+        manera que salga esta figura.</p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="200" viewBox="0 0 220 200">
+
+        <!-- Círculos de la izquierda -->
+        <circle cx="28" cy="35" r="12" fill="#555500" />
+        <circle cx="46" cy="47" r="15" fill="#888800" />
+        <circle cx="67" cy="60" r="18" fill="#AAAA00" />
+        <circle cx="91" cy="76" r="20" fill="#CCCC00" />
+
+        <!-- Círculos de la derecha -->
+        <circle cx="181" cy="35" r="12" fill="#005555" />
+        <circle cx="164" cy="47" r="15" fill="#008888" />
+        <circle cx="143" cy="60" r="18" fill="#00AAAA" />
+        <circle cx="124" cy="76" r="20" fill="#00CCCC" />
+        <circle cx="107" cy="91" r="21" fill="#00FFFF" />
+
+        <!-- Círculos inferiores -->
+        <circle cx="105" cy="110" r="20" fill="#AA00AA" />
+        <circle cx="105" cy="130" r="16" fill="#880088" />
+        <circle cx="105" cy="150" r="12" fill="#660066" />
+        <circle cx="105" cy="170" r="11" fill="#440044" />
+
+    </svg>
+
+    <h1>Ejercicio 6</h1>
+
+    <p>Modifica los viewbox para que se vea
+        solo esto . (puedes usar otra figura)</p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="-50 -50 300 300">
+
+        <!-- Círculos de la izquierda -->
+        <circle cx="28" cy="35" r="12" fill="#555500" />
+        <circle cx="46" cy="47" r="15" fill="#888800" />
+        <circle cx="67" cy="60" r="18" fill="#AAAA00" />
+        <circle cx="91" cy="76" r="20" fill="#CCCC00" />
+
+        <!-- Círculos de la derecha -->
+        <circle cx="181" cy="35" r="12" fill="#005555" />
+        <circle cx="164" cy="47" r="15" fill="#008888" />
+        <circle cx="143" cy="60" r="18" fill="#00AAAA" />
+        <circle cx="124" cy="76" r="20" fill="#00CCCC" />
+        <circle cx="107" cy="91" r="21" fill="#00FFFF" />
+
+        <!-- Círculos inferiores -->
+        <circle cx="105" cy="110" r="20" fill="#AA00AA" />
+        <circle cx="105" cy="130" r="16" fill="#880088" />
+        <circle cx="105" cy="150" r="12" fill="#660066" />
+        <circle cx="105" cy="170" r="11" fill="#440044" />
+
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-100 -100 400 400">
+
+        <!-- Círculos de la izquierda -->
+        <circle cx="28" cy="35" r="12" fill="#555500" />
+        <circle cx="46" cy="47" r="15" fill="#888800" />
+        <circle cx="67" cy="60" r="18" fill="#AAAA00" />
+        <circle cx="91" cy="76" r="20" fill="#CCCC00" />
+
+        <!-- Círculos de la derecha -->
+        <circle cx="181" cy="35" r="12" fill="#005555" />
+        <circle cx="164" cy="47" r="15" fill="#008888" />
+        <circle cx="143" cy="60" r="18" fill="#00AAAA" />
+        <circle cx="124" cy="76" r="20" fill="#00CCCC" />
+        <circle cx="107" cy="91" r="21" fill="#00FFFF" />
+
+        <!-- Círculos inferiores -->
+        <circle cx="105" cy="110" r="20" fill="#AA00AA" />
+        <circle cx="105" cy="130" r="16" fill="#880088" />
+        <circle cx="105" cy="150" r="12" fill="#660066" />
+        <circle cx="105" cy="170" r="11" fill="#440044" />
+
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="-150 -150 500 500">
+
+        <!-- Círculos de la izquierda -->
+        <circle cx="28" cy="35" r="12" fill="#555500" />
+        <circle cx="46" cy="47" r="15" fill="#888800" />
+        <circle cx="67" cy="60" r="18" fill="#AAAA00" />
+        <circle cx="91" cy="76" r="20" fill="#CCCC00" />
+
+        <!-- Círculos de la derecha -->
+        <circle cx="181" cy="35" r="12" fill="#005555" />
+        <circle cx="164" cy="47" r="15" fill="#008888" />
+        <circle cx="143" cy="60" r="18" fill="#00AAAA" />
+        <circle cx="124" cy="76" r="20" fill="#00CCCC" />
+        <circle cx="107" cy="91" r="21" fill="#00FFFF" />
+
+        <!-- Círculos inferiores -->
+        <circle cx="105" cy="110" r="20" fill="#AA00AA" />
+        <circle cx="105" cy="130" r="16" fill="#880088" />
+        <circle cx="105" cy="150" r="12" fill="#660066" />
+        <circle cx="105" cy="170" r="11" fill="#440044" />
+
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-200 -200 600 600">
+
+        <!-- Círculos de la izquierda -->
+        <circle cx="28" cy="35" r="12" fill="#555500" />
+        <circle cx="46" cy="47" r="15" fill="#888800" />
+        <circle cx="67" cy="60" r="18" fill="#AAAA00" />
+        <circle cx="91" cy="76" r="20" fill="#CCCC00" />
+
+        <!-- Círculos de la derecha -->
+        <circle cx="181" cy="35" r="12" fill="#005555" />
+        <circle cx="164" cy="47" r="15" fill="#008888" />
+        <circle cx="143" cy="60" r="18" fill="#00AAAA" />
+        <circle cx="124" cy="76" r="20" fill="#00CCCC" />
+        <circle cx="107" cy="91" r="21" fill="#00FFFF" />
+
+        <!-- Círculos inferiores -->
+        <circle cx="105" cy="110" r="20" fill="#AA00AA" />
+        <circle cx="105" cy="130" r="16" fill="#880088" />
+        <circle cx="105" cy="150" r="12" fill="#660066" />
+        <circle cx="105" cy="170" r="11" fill="#440044" />
+
+    </svg>
+
+</body>
+
+</html>
